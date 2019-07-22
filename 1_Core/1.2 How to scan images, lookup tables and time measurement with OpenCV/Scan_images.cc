@@ -110,5 +110,11 @@ int main(int argc, char const* argv[]) {
   // ScanImageAndReduceC();
   // ScanImageAndReduceIterator();
   // ScanImageAndReduceRandomAccess();
+  // The Core Function the very fast!
+  /**
+   * Mat lookUpTable(1, 256, CV_8U);
+   * uchar* p = lookUpTable.ptr();
+   * for (int i = 0; i < 256; ++i) p[i] = table[i];
+   */
   return 0;
 }
